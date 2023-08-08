@@ -1,0 +1,76 @@
+/* Styling for the entire navbar wrapper */
+.n-wrapper {
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for the left side of the navbar */
+.n-left {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  background: linear-gradient(
+    rgb(255, 196, 0),
+    rgb(255, 255, 255),
+    rgb(13, 255, 0)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Styling for the name */
+.n-name {
+  font-size: 2.1rem;
+  font-weight: bold;
+   
+}
+
+
+
+/* Styling for the right side of the navbar */
+.n-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 300px;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+
+/* Styling for the navigation list container */
+.n-list {
+  flex: 10;
+}
+
+/* Styling for the unordered list in the navigation list */
+.n-list > ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+}
+
+/* Styling when hovering over list items one by one */
+.n-list > ul > li:hover {
+  color: var(--gray);
+  cursor: pointer; 
+}
+
+/* Styling for the navigation button */
+.n-button {
+  flex: 2;
+}
+
+/* Media query for screens with a maximum width of 480px */
+@media screen and (max-width: 480px) {
+  /* Hide the navigation list on smaller screens */
+  .n-list {
+    display: none;
+  }
+  .n-button{
+    display: none;
+  }
+}

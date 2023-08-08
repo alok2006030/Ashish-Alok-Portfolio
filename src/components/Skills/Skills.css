@@ -1,0 +1,150 @@
+/* CSS variables for the light color scheme */
+:root {
+  --secondary-bg: #bddabe; /* Light gray for the background */
+  --primary-text: #333333; /* Dark gray for text */
+  --secondary-text: #666666; /* Medium gray for subtitles */
+  --accent-color: #ff4081; /* Pink accent color */
+  --light-blue: #80c0ff; /* Light blue for accent */
+  --light-green: #80ffaa; /* Light green for accent */
+  --awesome-red: #ff3838; /* Awesome red color */
+  --awesome-purple: #b19cd9; /* Awesome purple color */
+  --awesome-pink: #b30075; /* Awesome pink color */
+}
+
+/* Styles for the main container of the Skills component */
+.Skills {
+  padding: 0 3rem 0 3rem; /* Padding around the Skills component */
+  display: flex;
+  height: 20rem; /* Set the height of the Skills component */
+  margin-bottom: 8rem; /* Margin at the bottom of the Skills component */
+  margin-top: 5rem; /* Margin at the top of the Skills component */
+  padding-top: 3rem; /* Additional padding at the top for scroll view */
+  perspective: 600px; /* Perspective for 3D animation */
+  animation: leftToRight 2s alternate infinite; /* Animation for leftToRight motion */
+  background-color: var(--primary-bg); /* Set the background color using CSS variable */
+}
+
+/* Styles for the left side container */
+.awesome {
+  display: flex;
+  margin-top: 0;
+  height: 40vh; /* Set the height of the left side container */
+  flex-direction: column; /* Set the flex direction to column */
+  position: relative; /* Position relative for the absolute positioning of children */
+  transition: transform 0.3s ease; /* Transition for transform changes */
+  padding: 2rem; /* Padding inside the left side container */
+  border-radius: 15px; /* Border radius for rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Box shadow for the container */
+  background-color: rgba(0, 0, 0, 0.1); /* Set the background color with transparency */
+  color: var(--primary-text); /* Set the text color using CSS variable */
+  cursor: pointer; /* Set the cursor to pointer on hover */
+  background-clip: padding-box; /* Clip the background within the padding box */
+  transition: box-shadow 0.3s ease; /* Transition for box shadow changes */
+  /* Applying 3D frame motion */
+  animation: rotateFrame 6s linear infinite; /* Animation for 3D rotation */
+}
+
+/* Styling the "My Awesome" text */
+.awesome > :nth-child(1) {
+  height: 0rem;
+  margin-top: 0rem;
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: var(--awesome-red); /* Set the awesome red color using CSS variable */
+}
+
+/* Styling the "Skills" text */
+.awesome > :nth-child(2) {
+  margin-top: 3rem;
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: var(--awesome-blue); /* Set the awesome blue color using CSS variable */
+}
+
+/* Styling the skills details text */
+.awesome > :nth-child(3) {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--orange); /* Set the awesome pink color using CSS variable */
+}
+
+/* Styling the download CV button */
+.s-button {
+  width: 9rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  background-color: var(--accent-color); /* Set the button background color using CSS variable */
+  color: #ffffff; /* Set the button text color */
+}
+
+/* Applying 3D animation on hover */
+.awesome:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2),
+    0 0 10px var(--light-blue),
+    0 0 20px var(--light-green),
+    0 0 30px var(--awesome-red),
+    0 0 40px var(--awesome-purple); /* Applying multiple box shadows on hover */
+  background-color: rgb(0, 0, 0, 0.001); /* Set a transparent background on hover */
+}
+
+/* Styles for the right side container */
+.cards {
+  position: relative; /* Set the position to relative for absolute positioning of children */
+  width: 10rem; /* Set the width of the right side container */
+  height: 13rem; /* Set the height of the right side container */
+  display: flex; /* Display as a flex container */
+  gap: 1rem; /* Set the gap between children elements */
+}
+
+/* Styles for the absolute positioned children of the right side container */
+.cards > * {
+  position: absolute; /* Set the position to absolute */
+}
+
+/* Styling the blur element 2 */
+.s-blur2 {
+  left: -13rem;
+  top: 13rem;
+}
+
+/* Styling the blur element 1 */
+.s-blur1 {
+  top: 13rem;
+  left: -18rem;
+}
+
+/* Keyframes animation for rightToLeft motion */
+@keyframes rightToLeft {
+  0% {
+    transform: translateX();
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+/* Media query for screens with a maximum width of 480px (e.g., mobile devices) */
+@media screen and (max-width: 480px) {
+  .Skills {
+    margin-top: 2rem; /* Adjust the margin at the top for mobile devices */
+    flex-direction: column; /* Change the flex direction to column for stacking elements */
+    gap: 2rem; /* Set the gap between elements */
+    height: 70vh; /* Set the height of the Skills component for mobile devices */
+    padding: .1rem; /* Adjust the padding for mobile devices */
+  }
+
+  .cards {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column; /* Change the flex direction to column for stacking elements */
+  }
+
+  .cards > * {
+    position: static; /* Set the position to static for normal flow */
+    width: 100%; /* Set the width to 100% to occupy the full width */
+    margin-top: 2rem;
+  }
+  
+}

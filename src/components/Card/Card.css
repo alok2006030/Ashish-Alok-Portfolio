@@ -1,0 +1,72 @@
+/* Card container styling */
+.card {
+  width: 10rem;
+  height: 13rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.26);
+  border: 7px solid var(--orangeCard);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+  padding: 0px 26px 2rem 26px;
+  transition: transform 0.3s ease; /* Add transition for transform property */
+}
+
+/* Styling for the second span inside the card (detail) */
+.card span:nth-of-type(2) {
+  color: var(--blue);
+  font-size: 16px;
+}
+
+/* Styling for the image inside the card */
+.card > img {
+  transform: scale(0.6);
+  margin-bottom: -2rem;
+}
+
+/* Styling for the 'LEARN MORE' button */
+.c-button {
+  background: linear-gradient(45deg, #fdc50f, #fb982f);
+  box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
+  border-radius: 7px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+/* Applying a scale transformation on button hover */
+.c-button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Add a subtle animation to the card on hover */
+.card:hover {
+  transform: translateY(-5px); /* Move the card slightly up on hover */
+  box-shadow: 0px 24px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* Media query for smaller screens or mobile devices */
+@media screen and (max-width: 480px) {
+  .card {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+    gap: 2rem;
+    height: 18rem;
+  }
+
+  .cards {
+    display: flex;
+    gap: 22rem;
+    left: 1rem;
+    right: 1rem;
+  }
+}

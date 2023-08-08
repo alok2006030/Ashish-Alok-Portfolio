@@ -1,0 +1,72 @@
+/* Styling for the footer container */
+.footer {
+  display: flex;
+  align-items: center;
+  margin: -0.5rem -3.5rem;
+  position: relative;
+  margin-top: -7rem; /* Adjust the position of the footer relative to the content */
+}
+
+/* Styling for the footer content */
+.f-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 4rem; /* Add margin at the top of the footer content */
+  gap: 4rem;
+  color: white; /* Set the color of the text to white */
+}
+
+/* Styling for the social media icons container */
+.f-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Styling for each individual social media icon */
+.f-icons > * {
+  color: rgb(221, 106, 106); /* Set the initial color for the icons */
+  transform: scale(1); /* Set the initial scale for the icons */
+  transition: transform 0.3s ease, color 0.3s ease; /* Add transitions for both transform and color on hover */
+}
+
+/* Styling for social media icons on hover */
+.f-icons > *:hover {
+  cursor: pointer;
+  transform: scale(1.2) rotateY(20deg); /* Apply the 3D effect on hover */
+  color: var(--white); /* Change the color on hover */
+}
+
+/* Additional styles for smaller screens or mobile phones */
+@media screen and (max-width: 480px) {
+  /* Adjust the footer container margin for smaller screens */
+  .footer {
+    margin-top: 2rem;
+  }
+
+  /* Adjust the footer content for smaller screens */
+  .f-content {
+    transform: scale(0.8); /* Scale down the footer content for smaller screens */
+    height: 4rem; /* Set a fixed height for the footer content */
+    margin-top: 0rem; /* Remove margin at the top of the footer content */
+    gap: 2rem; /* Adjust the gap between elements */
+    text-align: center; /* Center align the footer content */
+  }
+
+  /* Adjust social media icons for smaller screens */
+  .f-icons {
+    display: flex;
+    justify-content: center; /* Center align the icons */
+    gap: 1rem; /* Adjust the gap between icons */
+  }
+
+  /* Adjust individual social media icons on hover for smaller screens */
+  .f-icons > *:hover {
+    cursor: pointer;
+    transform: scale(1.1) rotateY(0deg); /* Adjust the scale and rotation */
+  }
+}
+
