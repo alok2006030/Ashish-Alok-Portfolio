@@ -10,7 +10,9 @@ const Footer = () => {
     <div className="footer"> {/* Footer container */}
       <img src={Wave} alt="" style={{ width: "100%" }} /> {/* Wave image with 100% width */}
       <div className="f-content"> {/* Footer content */}
-        <span>ashishalok01@gmail.com</span> {/* Email address */}
+        <span>
+        <a href="mailto:ashishalok01@gmail.com" class="hover-link">ashishalok01@gmail.com</a>
+        </span> {/* Email address */}
         <div className="f-icons"> {/* Social media icons container */}
           {/* WhatsApp icon with link */}
           <a href="https://wa.me/7484995606" target="_blank">

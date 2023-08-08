@@ -22,3 +22,16 @@
     background: var(--yellow); /* Set the background color of the button to the yellow color */
     position: absolute; /* Set the position to absolute for positioning within the parent container */
 }
+
+
+/* Media query for screens with a maximum width of 480px (mobile devices) */
+@media screen and (max-width: 480px) {
+    /* Adjustments for mobile view */
+    .toggle {
+        flex-direction: row;
+        margin-left: 6rem;
+    }
+
+    }
+
+  

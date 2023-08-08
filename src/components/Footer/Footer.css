@@ -4,7 +4,7 @@
   align-items: center;
   margin: -0.5rem -3.5rem;
   position: relative;
-  margin-top: -7rem; /* Adjust the position of the footer relative to the content */
+  margin-top: 2rem; /* Adjust the position of the footer relative to the content */
 }
 
 /* Styling for the footer content */
@@ -39,12 +39,30 @@
   transform: scale(1.2) rotateY(20deg); /* Apply the 3D effect on hover */
   color: var(--white); /* Change the color on hover */
 }
+.hover-link {
+  color: #ffffff; /* Initial text color */
+  transition: color 0.3s ease; /* Smooth transition effect */
+  text-decoration: none; /* Remove underline */
+
+  /* Additional styles for hover effect */
+  border-bottom: 1px solid transparent; /* Transparent underline */
+}
+
+.hover-link:hover {
+  color: #007bff; /* Color on hover */
+  text-decoration:none; /*remove underline */
+}
+
+
+
+
 
 /* Additional styles for smaller screens or mobile phones */
 @media screen and (max-width: 480px) {
   /* Adjust the footer container margin for smaller screens */
   .footer {
     margin-top: 2rem;
+    margin-bottom: -1rem;
   }
 
   /* Adjust the footer content for smaller screens */

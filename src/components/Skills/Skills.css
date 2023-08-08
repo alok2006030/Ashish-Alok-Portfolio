@@ -128,23 +128,48 @@
 /* Media query for screens with a maximum width of 480px (e.g., mobile devices) */
 @media screen and (max-width: 480px) {
   .Skills {
-    margin-top: 2rem; /* Adjust the margin at the top for mobile devices */
+    margin-top: 0.5rem; /* Adjust the margin at the top for mobile devices */
     flex-direction: column; /* Change the flex direction to column for stacking elements */
     gap: 2rem; /* Set the gap between elements */
-    height: 70vh; /* Set the height of the Skills component for mobile devices */
-    padding: .1rem; /* Adjust the padding for mobile devices */
+    height: auto; /* Remove fixed height for mobile devices */
+    padding: 0.01rem; /* Adjust the padding for mobile devices */
+  }
+
+  .awesome {
+    height: auto; /* Set height to auto to adjust based on content */
+    padding: 1rem; /* Adjust padding for mobile devices */
   }
 
   .cards {
     display: flex;
-    gap: 2rem;
+    gap: 1rem; /* Adjust the gap between elements */
     flex-direction: column; /* Change the flex direction to column for stacking elements */
   }
 
   .cards > * {
     position: static; /* Set the position to static for normal flow */
     width: 100%; /* Set the width to 100% to occupy the full width */
-    margin-top: 2rem;
+    margin-top: 1rem; /* Adjust the margin-top for spacing */
+  }
+
+    /* Styling the "My Awesome" text */
+    .awesome > :nth-child(1) {
+      font-size: 1.8rem; /* Decrease font size for mobile view */
+      margin-top: 0.5rem; /* Add margin for spacing */
+    }
+  
+    /* Styling the "Skills" text */
+    .awesome > :nth-child(2) {
+      margin-top: 3rem; /* Adjust margin for spacing */
+      font-size: 1.8rem; /* Decrease font size for mobile view */
+    }
+  
+    /* Styling the skills details text */
+    .awesome > :nth-child(3) {
+      margin-top: 2rem;
+      margin-bottom: 1rem; /* Decrease margin-bottom for spacing */
+      font-size: 0.7rem; /* Decrease font size for mobile view */
+    }
   }
   
-}
+
