@@ -4,9 +4,9 @@ import "./Portfolio.css"; // Importing the CSS file for styling
 import { Swiper, SwiperSlide } from "swiper/react"; // Importing Swiper components for the slider
 import "swiper/css"; // Importing Swiper's CSS
 import Sidebar from "../../img/sidebar.png"; // Importing images for the slider
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
+import Sundar from "../../img/sundar.png";
+import ToDo from "../../img/todo.png";
+import MusicApp from "../../img/calculator.png";
 import { themeContext } from "../../Context"; // Importing the themeContext from the context file
 
 const Portfolio = () => {
@@ -29,17 +29,26 @@ const Portfolio = () => {
       >
         {/* Slides */}
         <SwiperSlide>
-          <img src={Sidebar} alt="" /> {/* Slide 1 - Displaying the Sidebar image */}
+          <a href="https://ashish-alok.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src={Sidebar} alt="Sidebar" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" /> {/* Slide 2 - Displaying the Ecommerce image */}
+          <a href="https://sundar-pichai.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src={Sundar} alt="Sundar" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" /> {/* Slide 3 - Displaying the MusicApp image */}
+          <a href="https://alok2006030.github.io/OIBSIP/OIB_Task_1/" target="_blank" rel="noopener noreferrer">
+            <img src={MusicApp} alt="MusicApp" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={HOC} alt="" /> {/* Slide 4 - Displaying the HOC image */}
+          <a href="https://alok2006030.github.io/OIBSIP/OIB_Task_3/" target="_blank" rel="noopener noreferrer">
+            <img src={ToDo} alt="ToDo" />
+          </a>
         </SwiperSlide>
+      
       </Swiper>
     </div>
   );
