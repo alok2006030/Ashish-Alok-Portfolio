@@ -47,11 +47,38 @@
 /* Media query for screens with a maximum width of 480px (e.g., mobile devices) */
 @media screen and (max-width: 480px) {
   .portfolio {
-    flex-direction: column; /* Changing the flex direction to column, stacking elements vertically */
-    gap: 2rem; /* Adding a gap of 2rem between the elements */
-     /* Setting the height of the portfolio section to 15rem for mobile devices */
-    margin-top: 70rem;
-     
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 55rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
+
+  .portfolio span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin: 0rem;
+  }
+
+ 
+
+ 
+  .image-container {
+    position: relative; /* Create a positioning context for image and overlay */
+    border-radius: 8px;
+    overflow: hidden; /* Hide overflowing parts of images */
+  }
+
+  .portfolio img {
+    width: 5rem;
+
+    height: 6rem;
+    border-radius: 8px;
+  }
+
 }
 
