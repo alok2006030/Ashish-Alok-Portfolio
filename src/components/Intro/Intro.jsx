@@ -30,8 +30,8 @@ const Intro = () => {
           {/* but in Name Ashish Alok dark mode not applied */}
           <span>Ashish Alok</span>
           <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producing the Quality work.
+          Web developer with expertise in frontend and backend development.<br></br> With high level of experience in web designing
+            and development,<br></br> producing the Quality work.
           </span>
         </div>
 

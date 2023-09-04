@@ -40,8 +40,7 @@
 /* Button hover effect */
 .button:hover {
   cursor: pointer;
-  /* color: rgb(0, 0, 0); */
- border: 1px solid white;
+  border: 1px solid white;
 /* Apply a transform and box shadow on hover */
     transform: translateY(-2px) scale(1.05) rotateX(10deg) rotateY(-5deg);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);

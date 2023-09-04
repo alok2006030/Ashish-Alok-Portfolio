@@ -13,7 +13,7 @@ const navbar = () => {
         {/* Display the name "Ashish" */}
         <div className="n-name">Ashish</div>
         
-        {/* Toggle component */}
+        {/* Toggle component call here */}
         <Toggle />
       </div>
 

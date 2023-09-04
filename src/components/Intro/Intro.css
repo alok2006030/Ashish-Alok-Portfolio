@@ -128,9 +128,8 @@
 .i-right > :nth-child(2) {
   top: -1.6rem;
   border-radius: 100%;
-  left: -6rem;
-  top: 10.3rem;
-  height: 65%;
+  left: -7.5rem;
+  top: 8.5rem;
 }
 
 /* Styling for the glasses emoji image */
@@ -200,8 +199,8 @@
   /* Adjust the boy image for mobile view */
   .i-right > :nth-child(2) {
     margin-top: -10rem;
-    margin-left: 1rem;
-    transform: scale(0.90);
+    margin-left: 7rem;
+    transform: scale(0.85);
   }
 
   /* Hide the glasses emoji image on mobile */

@@ -128,7 +128,7 @@
 /* Media query for screens with a maximum width of 480px (e.g., mobile devices) */
 @media screen and (max-width: 480px) {
   .Skills {
-    margin-top: 0.5rem; /* Adjust the margin at the top for mobile devices */
+    margin-top: 15rem; /* Adjust the margin at the top for mobile devices */
     flex-direction: column; /* Change the flex direction to column for stacking elements */
     gap: 2rem; /* Set the gap between elements */
     height: auto; /* Remove fixed height for mobile devices */
