@@ -1,8 +1,8 @@
 /* Styles for the main container of the Toggle component */
 .toggle {
-    display: flex; /* Display the children elements in a flex container */
-    justify-content: space-between; /* Align the children elements with space between them */
-    border: 3px solid var(--yellow); /* Add a 3px solid border with the yellow color */
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid rgb(104, 52, 52);
     border-radius: 1rem; /* Add a 1rem border radius for rounded corners */
     position: relative; /* Set the position to relative for absolute positioning of the button */
     padding: 2px; /* Add 2px padding around the container */
@@ -13,13 +13,13 @@
 .toggle > * {
     width: 1rem; /* Set the width of the children elements to 1rem */
     height: 1rem; /* Set the height of the children elements to 1rem */
-    color: var(--yellow); /* Set the color of the children elements to the yellow color */
+    color: rgb(255, 255, 255); /* Set the color of the children elements to the yellow color */
 }
 
 /* Styles for the toggle button (the circle in the center) */
 .t-button {
     border-radius: 100%; /* Make the button circular by setting border radius to 100% */
-    background: var(--yellow); /* Set the background color of the button to the yellow color */
+    background: rgb(104, 52, 52); /* Set the background color of the button to the yellow color */
     position: absolute; /* Set the position to absolute for positioning within the parent container */
 }
 
@@ -29,7 +29,7 @@
     /* Adjustments for mobile view */
     .toggle {
         flex-direction: row;
-        margin-left: 6rem;
+        margin-left: 5rem;
     }
 
     }

@@ -1,11 +1,11 @@
 // Import necessary modules and components
 import React, { useContext } from "react";
-import "./Skills.css"; // Importing the CSS file for styling
-import Card from "../Card/Card"; // Importing the Card component for displaying skills details
-import HeartEmoji from "../../img/heartemoji.png"; // Importing the image for the first skill card
-import Glasses from "../../img/glasses.png"; // Importing the image for the second skill card
-import Humble from "../../img/humble.png"; // Importing the image for the third skill card
-import { themeContext } from "../../Context"; // Importing the themeContext from the context file
+import "./Skills.css";
+import Card from "../Card/Card";
+import HeartEmoji from "../../img/heartemoji.png";
+import Glasses from "../../img/glasses.png";
+import Humble from "../../img/humble.png";
+import { themeContext } from "../../Context";
 import { motion } from "framer-motion"; // Importing the motion component from Framer Motion library
 import AshishAlok_Resume from './AshishAlok_Resume.pdf'; // Importing the PDF resume file
 
@@ -21,26 +21,29 @@ const Skills = () => {
   };
 
   return (
-    <div className="Skills" id="Skills"> {/* Main container for the Skills component */}
+    <div className="Skills" id="Skills">
       {/* Left side */}
       <div className="awesome">
         {/* Displaying the "My Awesome" text with conditional styling based on darkMode */}
         <span style={{ color: darkMode ? "yellow" : "" }}>My Awesome</span>
         <span style={{ color: darkMode ? "blue" : "" }}>Skills</span>
-        {/* Displaying skill details */}
         <span style={{ color: darkMode ? "white" : "" }}>
           Problem-Solving and Critical Thinking, Programming Languages (C++), 
           <br />Object-Oriented Programming (OOP),
           <br />
           Data Structures and Algorithms, Database Management, Operating Systems
         </span>
+        
         {/* Download link for the resume */}
         <a href={AshishAlok_Resume} download>
           {/* Download CV button */}
           <button className="button s-button">Download CV</button>
         </a>
-        <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
+        <div className="blur s-blur1"></div>
       </div>
+
+
+      
       {/* Right side */}
       <div className="cards">
         {/* First card with Framer Motion animation */}

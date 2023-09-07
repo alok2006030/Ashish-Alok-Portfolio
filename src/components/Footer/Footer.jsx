@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css"; // Import the CSS file for Footer styling
+import "./Footer.css";
 import Wave from "../../img/wave.png"; // Import the wave image
 import Insta from "@iconscout/react-unicons/icons/uil-whatsapp"; // Import the WhatsApp icon from Unicons library
 import Facebook from "@iconscout/react-unicons/icons/uil-twitter"; // Import the Twitter icon from Unicons library

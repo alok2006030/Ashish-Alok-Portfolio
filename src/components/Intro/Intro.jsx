@@ -27,9 +27,8 @@ const Intro = () => {
         {/* Name with conditional color based on darkMode */}
         <div className="i-name">
           <span style={{ color: darkMode ? "yellow" : "" }}>Hy! I Am</span>
-          {/* but in Name Ashish Alok dark mode not applied */}
           <span>Ashish Alok</span>
-          <span>
+          <span style={{ color: darkMode ? "white" : "" }}>
           Web developer with expertise in frontend and backend development.<br></br> With high level of experience in web designing
             and development,<br></br> producing the Quality work.
           </span>

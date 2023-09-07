@@ -28,8 +28,7 @@
 
 /* Styling for each individual social media icon */
 .f-icons > * {
-  color: rgb(221, 106, 106); /* Set the initial color for the icons */
-  transform: scale(1); /* Set the initial scale for the icons */
+  transform: scale(0.9); /* Set the initial scale for the icons */
   transition: transform 0.3s ease, color 0.3s ease; /* Add transitions for both transform and color on hover */
 }
 
@@ -37,10 +36,9 @@
 .f-icons > *:hover {
   cursor: pointer;
   transform: scale(1.2) rotateY(20deg); /* Apply the 3D effect on hover */
-  color: var(--white); /* Change the color on hover */
 }
 .hover-link {
-  color: #ffffff; /* Initial text color */
+  color: #ff0000; /* Initial text color */
   transition: color 0.3s ease; /* Smooth transition effect */
   text-decoration: none; /* Remove underline */
 
@@ -50,7 +48,7 @@
 
 .hover-link:hover {
   color: #007bff; /* Color on hover */
-  text-decoration:none; /*remove underline */
+  text-decoration:none;
 }
 
 

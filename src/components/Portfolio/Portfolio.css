@@ -1,5 +1,6 @@
 /* Styles for the main container of the portfolio section */
 .portfolio {
+  margin-top: 15rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,14 +10,14 @@
 
 /* Styling for the first span inside the .portfolio container (Recent Projects text) */
 .portfolio span:nth-of-type(1) {
-  color: var(--black); /* Setting the text color to the value of the CSS variable --black */
-  font-size: 2rem; /* Setting the font size to 2rem */
+  color: red;
+  font-size: 3rem; /* Setting the font size to 2rem */
   font-weight: bold; /* Making the text bold */
 }
 
 /* Styling for the second span inside the .portfolio container (Portfolio text) */
 .portfolio span:nth-of-type(2) {
-  color: var(--orange); /* Setting the text color to the value of the CSS variable --orange */
+  color: blue;
   font-size: 2.5rem; /* Setting the font size to 2.5rem */
   font-weight: bold; /* Making the text bold */
 }
@@ -40,6 +41,7 @@
 /* Styles for the images inside the slider */
 .portfolio img {
   width: 19rem; /* Setting the width of the images to 19rem */
+  height: 13rem;
   filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25)); /* Applying a drop shadow effect to the images */
   border-radius: 19px; /* Adding a border-radius of 19px to make the images slightly rounded */
 }

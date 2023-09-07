@@ -18,8 +18,7 @@
 
 /* Styling for the second span inside the card (detail) */
 .card span:nth-of-type(2) {
-  color: var(--blue);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* Styling for the image inside the card */
@@ -31,11 +30,10 @@
 /* Styling for the 'LEARN MORE' button */
 .c-button {
   background: linear-gradient(45deg, #fdc50f, #fb982f);
-  box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
   border-radius: 7px;
   border: none;
   padding: 10px;
-  font-size: 16px;
+  font-size: 14px;
   color: #ffffff;
   transition: transform 0.3s ease;
 }
@@ -46,11 +44,7 @@
   cursor: pointer;
 }
 
-/* Add a subtle animation to the card on hover */
-.card:hover {
-  transform: translateY(-5px); /* Move the card slightly up on hover */
-  box-shadow: 0px 24px 60px rgba(0, 0, 0, 0.12);
-}
+
 
 /* Media query for smaller screens or mobile devices */
 @media screen and (max-width: 480px) {

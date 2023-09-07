@@ -1,6 +1,6 @@
 // Import necessary modules and components
 import React, { useContext } from "react";
-import "./Portfolio.css"; // Importing the CSS file for styling
+import "./Portfolio.css"; 
 import { Swiper, SwiperSlide } from "swiper/react"; // Importing Swiper components for the slider
 import "swiper/css"; // Importing Swiper's CSS
 import Sidebar from "../../img/sidebar.png"; // Importing images for the slider
@@ -22,9 +22,11 @@ const Portfolio = () => {
 
       {/* Slider */}
       <Swiper
-        spaceBetween={30}
-        slidesPerView={3}
+        spaceBetween={70}
+        slidesPerView={2}
         grabCursor={true}
+        slidesOffsetBefore={2}
+        slidesOffsetAfter={2}
         className="portfolio-slider" // Adding a class for custom styling the slider
       >
         {/* Slides */}

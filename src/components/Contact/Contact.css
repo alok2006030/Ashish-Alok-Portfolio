@@ -4,7 +4,6 @@
   display:flex;
   height: 80vh;
   margin-top: 5.8rem;
-  /* Add padding at the top for spacing */
   padding-top: 1rem;
 }
 
@@ -40,7 +39,7 @@
   height: 2rem;
   padding: 0.3em;
   outline: none;
-  border: 2px solid var(--orange);
+  border: 2px solid black;
   border-radius: 8px;
   font-size: 16px;
   /* Additional styling for user input */
@@ -99,9 +98,6 @@ textarea {
     font-size: 10px;
     padding-left: 4px;
   }
-
-
-  /* Adjust the blurred element */
  
 
 }

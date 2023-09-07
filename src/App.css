@@ -13,9 +13,9 @@
 
 /* General styles for the entire app container */
 .App {
+  border-radius: 5px;
   padding: 0.5rem 3.5rem;
   overflow: hidden;
-  color: var(--black);
   /* Gradient background with three lighter colors */
   background: linear-gradient(180deg, #ff9933, #ffffff, #47c57d);
 }

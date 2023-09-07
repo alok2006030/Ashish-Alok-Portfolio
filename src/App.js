@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 // add intro.jsx in this 
 import Intro from "./components/Intro/Intro";
 import Skills from "./components/Skills/Skills";
-import "./App.css"; // Custom CSS styles for the App component
+import "./App.css";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";

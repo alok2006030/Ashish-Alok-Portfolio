@@ -4,18 +4,16 @@ import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 // Import to enable smooth scrolling
 import { Link } from "react-scroll";
-
+//create function
 const navbar = () => {
   return (
     <div className="n-wrapper" id="Navbar">
       {/* Left side of the navbar */}
       <div className="n-left">
-        {/* Display the name "Ashish" */}
         <div className="n-name">Ashish</div>
-        
-        {/* Toggle component call here */}
         <Toggle />
       </div>
+
 
       {/* Right side of the navbar */}
       <div className="n-right">
