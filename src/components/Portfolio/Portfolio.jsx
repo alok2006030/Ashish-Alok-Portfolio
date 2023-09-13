@@ -7,6 +7,7 @@ import Sidebar from "../../img/sidebar.png"; // Importing images for the slider
 import Sundar from "../../img/sundar.png";
 import ToDo from "../../img/todo.png";
 import MusicApp from "../../img/calculator.png";
+import PocketShop from "../../img/PocketShop.png"
 import { themeContext } from "../../Context"; // Importing the themeContext from the context file
 
 const Portfolio = () => {
@@ -30,6 +31,11 @@ const Portfolio = () => {
         className="portfolio-slider" // Adding a class for custom styling the slider
       >
         {/* Slides */}
+        <SwiperSlide>
+          <a href="https://github.com/alok2006030/Pocket-Shop" target="_blank" rel="noopener noreferrer">
+            <img src={PocketShop} alt="PocketShop" />
+          </a>
+        </SwiperSlide>
         <SwiperSlide>
           <a href="https://ashish-alok.vercel.app/" target="_blank" rel="noopener noreferrer">
             <img src={Sidebar} alt="Sidebar" />
