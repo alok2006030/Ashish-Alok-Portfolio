@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import "./Intro.css";
 import Vector2 from "../../img/Vector2.gif";
-import boy from "../../img/boy.png";
 import crown from "../../img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
@@ -59,8 +58,7 @@ const Intro = () => {
       <div className="i-right">
         {/* Images */}
         <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
-        <img src={glassesimoji} alt="" />
+
 
   
         {/* FloatingDiv web div animation */}

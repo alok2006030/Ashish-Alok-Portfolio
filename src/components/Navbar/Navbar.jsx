@@ -1,9 +1,9 @@
 import React from "react";
 import Toggle from "../Toggle/Toggle";
-// import to enable css in this page
 import "./Navbar.css";
 // Import to enable smooth scrolling
 import { Link } from "react-scroll";
+
 //create function
 const navbar = () => {
   return (
@@ -15,7 +15,7 @@ const navbar = () => {
       </div>
 
 
-      {/* Right side of the navbar */}
+      {/* Right side of the navbar "n" representing navbar*/}
       <div className="n-right">
         {/* List of navigation items */}
         <div className="n-list">
@@ -31,7 +31,7 @@ const navbar = () => {
             <li>
               <Link to="Skills" spy={true} smooth={true}>
                 Skills
-              </Link>
+              </Link> 
             </li>
             {/* Link to the "Projects" section with smooth scrolling */}
             <li>

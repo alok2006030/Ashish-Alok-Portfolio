@@ -1,6 +1,5 @@
 // Importing required components and styles
-import Navbar from "./components/Navbar/Navbar";
-// add intro.jsx in this 
+import Navbar from "./components/Navbar/Navbar"; 
 import Intro from "./components/Intro/Intro";
 import Skills from "./components/Skills/Skills";
 import "./App.css";
@@ -9,6 +8,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { useContext } from "react"; // Importing useContext hook from React
 import { themeContext } from "./Context"; // Importing the themeContext from a custom context
+
 
 // App component function
 function App() {

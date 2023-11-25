@@ -1,9 +1,10 @@
 /* Root variables for color values */
+/* This color i use entire project */
 :root {
   --yellow: #675316;
   --orange: #1c0c87;
   --black: #0a1535;
-  --gray: #ff0000;
+  --gray: #808080;
   --blueCard: #DDF8FE;
   --purple: rgb(238 210 255);
   --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
@@ -11,7 +12,7 @@
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
-/* General styles for the entire app container */
+/* General styles for the ent ire web page */
 .App {
   border-radius: 5px;
   padding: 0.5rem 3.5rem;
@@ -20,7 +21,7 @@
   background: linear-gradient(180deg, #ff9933, #ffffff, #47c57d);
 }
 
-/* Styling for the button */
+/* Styling for the all button */
 .button {
   /* Indian flag color in button */
   background: linear-gradient(180deg,  #ff9933, #ffffff, #47c57d);
