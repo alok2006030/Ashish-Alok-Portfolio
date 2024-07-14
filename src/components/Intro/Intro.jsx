@@ -1,76 +1,112 @@
 import React, { useContext } from "react";
 import "./Intro.css";
-import Vector2 from "../../img/Vector2.gif";
+// import Vector1 from "../../img/Vector1.png";
+// import Vector2 from "../../img/Vector2.png";
+import boy from "../../img/boy.png";
+import glassesimoji from "../../img/glassesimoji.png";
+import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
-import whatsapp from "../../img/whatsapp.png";
-import glassesimoji from "../../img/glasses.png";
+import Instagram from "../../img/instagram.png";
+import Mail from "../../img/Mail.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
 
-  // Context
+  // context
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="Intro">
-      {/* Left side name section */}
+    <div className="Intro" id="Intro">
+      {/* left name side */}
       <div className="i-left">
-        {/* Name with conditional color based on darkMode */}
         <div className="i-name">
-          <span style={{ color: darkMode ? "yellow" : "" }}>Hy! I Am</span>
+          {/* yahan change hy darkmode ka */}
+          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
           <span>Ashish Alok</span>
-          <span style={{ color: darkMode ? "white" : "" }}>
-          Web developer with expertise in frontend and backend development.<br></br> With high level of experience in web designing
-            and development,<br></br> producing the Quality work.
+          <span>
+          Completed, graduation B.Tech in computer science and engineering from the National Institute of Technology Patna, India
+          <br />
+          Web developer with expertise in frontend and backend development.
+          With high level of experience in web designing and development,
+          producing the Quality work.
           </span>
         </div>
-
-        {/* Link to the contact section */}
-        <div id="cv">
-          <Link to="contact" smooth={true} spy={true}>
-            <button className="button i-button">Hire me</button>
-          </Link>
-        </div>
-
-        {/* Social icons */}
+        <Link to="contact" smooth={true} spy={true}>
+          <button className="button i-button">Hire me</button>
+        </Link>
+        {/* social icons */}
         <div className="i-icons">
-          <a href="https://github.com/alok2006030" target="_blank">
-            <img src={Github} alt="" />
-          </a>
-          <a href="https://www.linkedin.com/in/the-ashishalok/" target="_blank">
-            <img src={LinkedIn} alt="" />
-          </a>
-          <a href="https://wa.me/7484995606" target="_blank">
-            <img src={whatsapp} alt="" />
-          </a>
-        </div>
-      </div>
-
-      {/* Right side image section */}
-      <div className="i-right">
-        {/* Images */}
-        <img src={Vector2} alt="" />
-
-
+  <a href="https://github.com/alok2006030" target="_blank" rel="noopener noreferrer">
+    <img src={Github} alt="GitHub" />
+  </a>
+  <a href="https://www.linkedin.com/in/the-ashishalok/" target="_blank" rel="noopener noreferrer">
+    <img src={LinkedIn} alt="LinkedIn" />
+  </a>
+  <a href="https://www.instagram.com/ashishalok001/" target="_blank" rel="noopener noreferrer">
+    <img src={Instagram} alt="Instagram" />
+  </a>
+  <a href="https://mail.google.com/ashishalok01@gmail.com" target="_blank" rel="noopener noreferrer">
+    <img src={Mail} alt="Mail" />
+  </a>
   
-        {/* FloatingDiv web div animation */}
+  
+</div>
+
+
+      </div>
+      {/* right image side */}
+      <div className="i-right">
+        {/* <img src={Vector1} alt="" /> */}
+        {/* <img src={Vector2} alt="" /> */}
+        <img src={boy} alt="" />
+        {/* animation */}
+        <motion.img
+          initial={{ left: "-36%" }}
+          whileInView={{ left: "-24%" }}
+          transition={transition}
+          src={glassesimoji}
+          alt=""
+        />
+
         <motion.div
-          initial={{ top: "-18%", left: "10%" }}
+          initial={{ top: "-4%", left: "74%" }}
           whileInView={{ left: "68%" }}
           transition={transition}
           className="floating-div"
         >
           <FloatinDiv img={crown} text1="Web" text2="Developer" />
         </motion.div>
-    </div>
+
+        {/* animation */}
+        <motion.div
+          initial={{ left: "9rem", top: "18rem" }}
+          whileInView={{ left: "0rem" }}
+          transition={transition}
+          className="floating-div"
+        >
+          {/* floatinDiv mein change hy dark mode ka */}
+          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+        </motion.div>
+
+        <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
+        <div
+          className="blur"
+          style={{
+            background: "#C1F5FF",
+            top: "17rem",
+            width: "21rem",
+            height: "11rem",
+            left: "-9rem",
+          }}
+        ></div>
+      </div>
     </div>
   );
 };

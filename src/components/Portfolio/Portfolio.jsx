@@ -1,65 +1,43 @@
-// Import necessary modules and components
 import React, { useContext } from "react";
-import "./Portfolio.css"; 
-import { Swiper, SwiperSlide } from "swiper/react"; // Importing Swiper components for the slider
-import "swiper/css"; // Importing Swiper's CSS
-import Sidebar from "../../img/sidebar.png"; // Importing images for the slider
-import Sundar from "../../img/sundar.png";
-import ToDo from "../../img/todo.png";
-import MusicApp from "../../img/calculator.png";
-import PocketShop from "../../img/PocketShop.png"
-import { themeContext } from "../../Context"; // Importing the themeContext from the context file
-
+import "./Portfolio.css";
+import { Swiper, SwiperSlide } from "swiper/react"
+import "swiper/css";
+import Sidebar from "../../img/shopping_web_app.png";
+import Ecommerce from "../../img/personal_portfolio.png";
+import HOC from "../../img/to_do_list.png";
+import MusicApp from "../../img/landing_page_sundarpichai.png";
+import { themeContext } from "../../Context";
 const Portfolio = () => {
-  // Using React's useContext hook to access the themeContext
-  const theme = useContext(themeContext); // Getting the theme from the context
-  const darkMode = theme.state.darkMode; // Extracting the darkMode property from the theme
-
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div className="portfolio" id="portfolio"> {/* Main container for the Portfolio component */}
+    <div className="portfolio" id="portfolio">
       {/* heading */}
-      <span style={{ color: darkMode ? "yellow" : "" }}>Recent Projects</span> {/* Conditional styling based on darkMode */}
-      <span>Portfolio</span> {/* Displaying the "Portfolio" text */}
+      <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
+      <span>Portfolio</span>
 
-      {/* Slider */}
+      {/* slider */}
       <Swiper
-        spaceBetween={70}
-        slidesPerView={2}
+        spaceBetween={30}
+        slidesPerView={3}
         grabCursor={true}
-        slidesOffsetBefore={2}
-        slidesOffsetAfter={2}
-        className="portfolio-slider" // Adding a class for custom styling the slider
+        className="portfolio-slider"
       >
-        {/* Slides */}
         <SwiperSlide>
-          <a href="https://github.com/alok2006030/Pocket-Shop" target="_blank" rel="noopener noreferrer">
-            <img src={PocketShop} alt="PocketShop" />
-          </a>
+          <img src={Sidebar} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <a href="https://ashish-alok.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <img src={Sidebar} alt="Sidebar" />
-          </a>
+          <img src={Ecommerce} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <a href="https://sundar-pichai.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <img src={Sundar} alt="Sundar" />
-          </a>
+          <img src={MusicApp} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <a href="https://alok2006030.github.io/OIBSIP/OIB_Task_1/" target="_blank" rel="noopener noreferrer">
-            <img src={MusicApp} alt="MusicApp" />
-          </a>
+          <img src={HOC} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
-          <a href="https://alok2006030.github.io/OIBSIP/OIB_Task_3/" target="_blank" rel="noopener noreferrer">
-            <img src={ToDo} alt="ToDo" />
-          </a>
-        </SwiperSlide>
-      
       </Swiper>
     </div>
   );
 };
 
-export default Portfolio; // Exporting the Portfolio component to use it in other parts of the application
+export default Portfolio;

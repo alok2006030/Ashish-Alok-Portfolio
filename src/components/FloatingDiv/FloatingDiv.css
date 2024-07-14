@@ -1,32 +1,20 @@
-/* Styling for the floating div container web development*/
 .floatingDiv {
-  justify-content: space-around; /* Align items with equal space around */
-  background: white; /* White background color */
-  box-shadow: var(--boxShadow); /* Box shadow with the variable --boxShadow */
-  border-radius: 20px; /* Border radius for rounded corners */
-  display: flex; /* Display as a flex container */
-  align-items: center; /* Align items vertically center */
-  padding: 0px 28px 0px 0px; /* Padding for left and right */
-  height: 4rem; /* Fixed height for the container */
+  justify-content: space-around;
+  background: white;
+  box-shadow: var(--boxShadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  padding: 0px 28px 0px 0px;
+  height: 4.5rem;
 }
-
-/* Styling for the floating image within the div */
 .floatingDiv > img {
-  transform: scale(0.4); /* Scale down the image to 40% */
+  transform: scale(0.4);
 }
-
-/* Styling for the text (span) within the div */
 .floatingDiv > span {
-  font-family: sans-serif; /* Font family for the text */
-  /* Color added for the text, will be overwritten for dark mode later */
-  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  /* yahan ye color add kia hy bad mein dark mode k waqt */
+  color: rgb(80, 29, 29);
 }
 
-/* Media query for smaller screens or mobile devices (max-width: 480px) */
-@media screen and (max-width: 480px) {
-  .floatingDiv {
-    display: none; /* Hide the floating div on mobile devices */
-  }
-}
-
-/* Add your additional comments here */

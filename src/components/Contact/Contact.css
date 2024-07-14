@@ -1,107 +1,56 @@
-/* Styling for the contact form container */
-.contact-form {
-  padding: 0 8rem;
-  display:flex;
-  height: 80vh;
-  margin-top: 5.8rem;
-  padding-top: 1rem;
+.contact-form{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 80vh;
+    margin-top: 4rem;
+      /* scroll */
+  padding-top: 3rem;
 }
 
-/* adding style for left side of Get in touch, Contact me */
-.w-left{
-  margin-top: -2rem;
-  height: auto;
-  text-align: center;
-  
-}
-
-
-
-/* Styling for the right side of the form */
-.c-right {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  flex: 1;
-}
-
-.c-right > form {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-}
-
-
-/* Styling for the user input fields */
-.c-right .user {
-  width: 20rem;
-  height: 2rem;
-  padding: 0.3em;
-  outline: none;
-  border: 2px solid black;
-  border-radius: 8px;
-  font-size: 16px;
-  /* Additional styling for user input */
-  background-color: #f3d2d2; /* Light gray background color */
-  color: #1a1515; /* Text color */
-  font-family: Arial, sans-serif; /* Font family */
-  padding-left: 10px; /* Padding on the left side of input */
-}
-
-/* Styling for the text area input field */
-textarea {
-  height: 4rem!important;
-  /* Additional styling for textarea */
-  background-color: #f9f9f9; /* Light gray background color */
-  color: #000000; /* Text color */
-  font-family: Arial, sans-serif; /* Font family */
-  padding: 10px; /* Padding for textarea */
-  resize: none; /* Disable textarea resizing */
-  border: 2px solid var(--orange); /* Border for textarea */
-  border-radius: 8px; /* Border radius for textarea */
-}
-
-
-
-/* Media query for smaller screens or mobile phones */
-@media screen and (max-width: 480px) {
-  /* Adjust the contact form layout */
-  .contact-form {
-    padding: 0;
-    flex-direction: column;
-    height: auto;
-    margin-top: 3rem;
-    padding-top: 0rem;
-  }
-
-  /* Center align the Get in touch/Contact me text */
-  .w-left {
-    margin-top: 0;
-    text-align: center;
-  }
-
-  /* Adjust the right side of the form */
-  .c-right {
+.c-right{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
     position: relative;
     flex: 1;
-  }
-
-  /* Adjust user input fields */
-  .c-right .user {
-    margin: 2rem;
-    width: 110%;
-    font-size: 10px;
-    padding-left: 4px;
-  }
- 
-
 }
 
+.c-right>form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    
+}
 
+.c-right .user{
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3em;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;   
+}
 
+textarea{
+    height: 4rem!important;
+}
 
+.c-blur1{
+    top: 1rem;
+    left: 8rem;
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form{
+        padding: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 45rem;
+    }
+    .c-right .user{
+        width: 16rem;
+    }
+
+}   

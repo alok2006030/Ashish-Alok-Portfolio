@@ -1,32 +1,36 @@
 import React from "react";
 import "./Footer.css";
-import Wave from "../../img/wave.png"; // Import the wave image
-import Insta from "@iconscout/react-unicons/icons/uil-whatsapp"; // Import the WhatsApp icon from Unicons library
-import Facebook from "@iconscout/react-unicons/icons/uil-twitter"; // Import the Twitter icon from Unicons library
-import Github from "@iconscout/react-unicons/icons/uil-github"; // Import the GitHub icon from Unicons library
+import footer_image from "../../img/footer_image.png";
+import Insta from "@iconscout/react-unicons/icons/uil-instagram";
+import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
+import Gitub from "@iconscout/react-unicons/icons/uil-github";
 
 const Footer = () => {
   return (
-    <div className="footer"> {/* Footer container */}
-      <img src={Wave} alt="" style={{ width: "100%" }} /> {/* Wave image with 100% width */}
-      <div className="f-content"> {/* Footer content */}
-        <span>
-        <a href="mailto:ashishalok01@gmail.com" class="hover-link">ashishalok01@gmail.com</a>
-        </span> {/* Email address */}
-        <div className="f-icons"> {/* Social media icons container */}
-          {/* WhatsApp icon with link */}
-          <a href="https://wa.me/7484995606" target="_blank">
-            <Insta color="white" size={"3rem"} /> {/* Set color and size for the icon */}
-          </a>
-          {/* Twitter icon with link */}
-          <a href="https://twitter.com/AshishAlok01" target="_blank">
-            <Facebook color="white" size={"3rem"} /> {/* Set color and size for the icon */}
-          </a>
-          {/* GitHub icon with link */}
-          <a href="https://github.com/alok2006030" target="_blank">
-            <Github color="white" size={"3rem"} /> {/* Set color and size for the icon */}
-          </a>
-        </div>
+    <div className="footer">
+
+      <img src={footer_image} alt="" style={{ width: "100%", height:"180px"}} />
+      <div className="f-content">
+      <div>
+      <span style={{ textDecoration: 'none' }}>
+  <a href="mailto:ashishalok01@gmail.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+    ashishalok01@gmail.com
+  </a>
+</span>
+
+  <div className="f-icons">
+    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+      <Insta color="purple" size={"2.5rem"} />
+    </a>
+    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+      <Facebook color="purple" size={"2.5rem"} />
+    </a>
+    <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+      <Gitub color="purple" size={"2.5rem"} />
+    </a>
+  </div>
+</div>
+
       </div>
     </div>
   );

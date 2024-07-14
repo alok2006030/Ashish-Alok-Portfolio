@@ -1,50 +1,48 @@
 import React from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
-// Import to enable smooth scrolling
 import { Link } from "react-scroll";
-
-//create function
 const navbar = () => {
   return (
     <div className="n-wrapper" id="Navbar">
-      {/* Left side of the navbar */}
+      {/* left */}
       <div className="n-left">
         <div className="n-name">Ashish</div>
         <Toggle />
       </div>
-
-
-      {/* Right side of the navbar "n" representing navbar*/}
+      {/* right */}
       <div className="n-right">
-        {/* List of navigation items */}
         <div className="n-list">
-          {/* Remove bullet points from the list */}
           <ul style={{ listStyleType: "none" }}>
-            {/* Link to the "Home" section with smooth scrolling */}
             <li>
               <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
                 Home
               </Link>
             </li>
-            {/* Link to the "Skills" section with smooth scrolling */}
             <li>
-              <Link to="Skills" spy={true} smooth={true}>
-                Skills
-              </Link> 
+              <Link to="services" spy={true} smooth={true}>
+                Serivces
+              </Link>
             </li>
-            {/* Link to the "Projects" section with smooth scrolling */}
+            <li>
+              <Link to="works" spy={true} smooth={true}>
+                Experience
+              </Link>
+            </li>
             <li>
               <Link to="portfolio" spy={true} smooth={true}>
-                Projects
+                Protfolio
+              </Link>
+            </li>
+            <li>
+              <Link to="testimonial" spy={true} smooth={true}>
+                Testimonial
               </Link>
             </li>
           </ul>
         </div>
-        
-        {/* Button to scroll to the "Contact" section with smooth scrolling */}
         <Link to="contact" spy={true} smooth={true}>
-          <button className="button n-button">Contact</button>
+        <button className="button n-button">Contact</button>
         </Link>
       </div>
     </div>

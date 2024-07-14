@@ -1,167 +1,137 @@
-/* Additional CSS for the main container */
 .Intro {
   display: flex;
-  height: 65vh;
+  height: 77vh;
   margin-top: 6rem;
-  perspective: 1000px; /* Adding perspective for 3D effect */
 }
 
-
-
-/* Styling for the left side */
+/* left side styling */
 .i-left {
   display: flex;
   position: relative;
   flex: 1;
-  flex-direction: column; /* Column direction for "Hire me" button */
+  flex-direction: column;
   gap: 2rem;
 }
-
-
-/* Styling for the name */
 .i-name {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 0.25rem;
 }
-
-
-/* Styling for the first child of .i-name (Hy! I Am) */
 .i-name > :nth-child(1) {
   color: var(--black);
   font-weight: bold;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
-
-
-
-/* Styling for the second child of .i-name (Ashish Alok) */
 .i-name > :nth-child(2) {
-  color: transparent;
+  color: var(--orange);
   font-weight: bold;
-  font-size: 3.5rem;
-  background: linear-gradient(
-    rgb(255, 196, 0),
-    rgb(255, 255, 255),
-    rgb(13, 255, 0)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
 }
-
-
-
-
-/* Styling for the third child of .i-name (web development) */
 .i-name > :nth-child(3) {
   font-weight: 100;
-  font-size: 18px;
+  font-size: 1rem;
+  color: var(--gray);
   margin-top: 10px;
 }
-
-/* Styling for the "Hire me" button */
 .i-button {
-  /* Set button dimensions */
-  width: 6.5rem;
-  height: 2.5rem;
+  width: 6rem;
+  height: 2rem;
 }
-
-.i-button:hover {
-  /* Apply a transform and box shadow on hover */
-  transform: translateY(-2px) scale(1.05) rotateX(10deg) rotateY(-5deg);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  
-}
-
-
-/* Styling for social icons (LinkedIn, Github, WhatsApp) */
 .i-icons {
   margin-top: 3rem;
   display: flex;
-  gap: 1rem;
+  gap: 0rem;
 }
-/* Styling for all images within .i-icons */
 .i-icons > * {
-  /* transform all image half of their size */
   transform: scale(0.5);
-  transition: transform 0.3s ease;
-  cursor: crosshair;
 }
-
-/* Apply hover effect to .i-icons > * elements */
 .i-icons > *:hover {
-  /* Increase the size on hover */
-  transform: scale(0.8);
+  cursor: pointer;
 }
-
-
-
-
-
-
-
-
-/* Right side animation */
+/* right side styling */
 .i-right {
   flex: 1;
   position: relative;
-  animation: floatBalloon 10s ease-in-out infinite;
 }
-
-/* Styling for all elements within .i-right */
 .i-right > * {
   position: absolute;
   z-index: 1;
 }
-
-/* Styling for the background coding image */
 .i-right > :nth-child(1) {
-  top: -1.6rem;
-  top: 3rem;
-  height: 100%;
-  left: 4rem;
+  position: absolute; /* Ensure the element can be positioned */
+  transform: scale(1.5); /* Scale the element */
+  top: -9%; /* Adjust the top position */
+  right: 35%; /* Adjust the right position */
+  border-radius: 50%; /* Make the element circular */
+  overflow: hidden; /* Hide any overflowing content */
 }
 
-/* Styling for the boy image */
 .i-right > :nth-child(2) {
-  top: -1.6rem;
-  border-radius: 100%;
-  left: -7.5rem;
-  top: 8.5rem;
+  top: -4.6rem;
+  transform: scale(0.57);
+  left: -3rem;
 }
 
-/* Styling for the glasses emoji image */
 .i-right > :nth-child(3) {
-  transform: scale(0.70);
-  left: -6rem;
+  transform: scale(0.77);
+  left: 28%;
+ 
+}
+.i-right > :nth-child(4) {
+  transform: scale(0.77);
+  top: -19%;
+  left: -24%;
   border-radius: 50%;
+  padding: 0;
 }
 
-
-
-/* Keyframes for floating animation */
-@keyframes floatBalloon {
-  0%, 100% {
-    transform: translateY(45);
-  }
-  50% {
-    transform: translateX(-20px);
-  }
-  50% {
-    transform: translatez(-20px);
-  }
-}
-/* Styling for images on the right side */
-/* styling only on glass image */
-.i-right > img {
-  animation: floatBalloon 2s ease-in-out infinite;
+/* blur */
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(212px);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px);
 }
 
-/* Right side styling images */
-/* this styling for background image */
-.i-right {
-  flex: 1;
-  position: relative;
-  animation: floatBalloon 4s ease-in-out infinite; /* Floating animation */
+@media screen and (max-width: 480px) {
+  .Intro {
+    flex-direction: column;
+    height: 72rem; /* Adjust height as needed for phone view */
+    padding: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .i-icons{
+    margin-top: 0.5rem;
+  }
+
+  .i-right {
+    transform: scale(0.9);
+    left: -3rem;
+  }
+  .i-right > :nth-child(3) {
+    left: 6.5rem;
+    top: -3.2rem;
+  }
+  .i-right > :nth-child(1) {
+    left: 5.0rem;
+  }
+
+  .i-right .blur {
+    display: none;
+  }
+  .floating-div:nth-of-type(1) {
+    top: -8rem !important;
+    
+  }
+  
+  
+
+  
 }

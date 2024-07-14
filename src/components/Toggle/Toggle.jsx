@@ -1,30 +1,22 @@
-// Import necessary modules and components
 import React, { useContext } from "react";
-import "./Toggle.css"; // Importing the CSS file for styling
-import Moon from "@iconscout/react-unicons/icons/uil-moon"; // Importing the Moon icon from Unicons library
-import Sun from "@iconscout/react-unicons/icons/uil-sun"; // Importing the Sun icon from Unicons library
-import { themeContext } from "../../Context"; // Importing the themeContext from the context file
+import "./Toggle.css";
+import Moon from "@iconscout/react-unicons/icons/uil-moon";
+import Sun from "@iconscout/react-unicons/icons/uil-sun";
+import { themeContext } from "../../Context";
 
 const Toggle = () => {
-  // Using React's useContext hook to access the theme data from the context
-  const theme = useContext(themeContext); // Getting the theme from the context
-  const darkMode = theme.state.darkMode; // Extracting the darkMode property from the theme
-
-  // Function to handle the click event when the toggle button is clicked
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   const handleClick = () => {
-    // Dispatching a "toggle" action to the theme context to switch between dark and light mode
+    // debugger
     theme.dispatch({ type: "toggle" });
   };
-
   return (
-    <div className="toggle" onClick={handleClick}> {/* Main container for the Toggle component */}
-      {/* Display the Moon icon */}
+    <div className="toggle" onClick={handleClick}>
       <Moon />
-      {/* Display the Sun icon */}
       <Sun />
-
-      {/* Button style to move on sun or moon */}
-      {/* The position of the button is adjusted based on the darkMode */}
+      {/*                              toggle.css mein left ki property aik assign hy ussy delete
+                                          krna hy pehly */}
       <div
         className="t-button"
         style={darkMode ? { left: "2px" } : { right: "2px" }}
@@ -33,4 +25,4 @@ const Toggle = () => {
   );
 };
 
-export default Toggle; // Exporting the Toggle component to use it in other parts of the application
+export default Toggle;
