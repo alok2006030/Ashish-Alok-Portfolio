@@ -20,7 +20,7 @@ const Testimonial = () => {
     {
       img: profilePic2,
       review:
-        "The website's design is excellent, combining elegance and functionality. It features a sleek layout, easy navigation, and quick load times. Visually appealing, consistently branded, and accessible, it sets a benchmark for web design.",
+        "The website blends elegant design with functionality, offering a sleek layout, intuitive navigation, fast load times, and a visually appealing, branded experience that sets a web design benchmark.",
     },
     {
       img: profilePic3,
