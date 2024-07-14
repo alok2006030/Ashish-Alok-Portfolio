@@ -11,6 +11,7 @@ import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
 import Mail from "../../img/Mail.png";
+import YouTube from "../../img/youtube.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -49,8 +50,8 @@ const Intro = () => {
   <a href="https://www.linkedin.com/in/the-ashishalok/" target="_blank" rel="noopener noreferrer">
     <img src={LinkedIn} alt="LinkedIn" />
   </a>
-  <a href="https://www.instagram.com/ashishalok001/" target="_blank" rel="noopener noreferrer">
-    <img src={Instagram} alt="Instagram" />
+  <a href="https://www.youtube.com/@ashish_alok" target="_blank" rel="noopener noreferrer">
+    <img src={YouTube} alt="YouTube" />
   </a>
   <a href="https://mail.google.com/ashishalok01@gmail.com" target="_blank" rel="noopener noreferrer">
     <img src={Mail} alt="Mail" />
