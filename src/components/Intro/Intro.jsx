@@ -1,20 +1,19 @@
 import React, { useContext } from "react";
 import "./Intro.css";
-// import Vector1 from "../../img/Vector1.png";
-// import Vector2 from "../../img/Vector2.png";
 import boy from "../../img/boy.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
-import Github from "../../img/github.png";
-import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
-import Mail from "../../img/Mail.png";
-import YouTube from "../../img/youtube.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+
+
+import Github from "@iconscout/react-unicons/icons/uil-github";
+import LinkedIn from "@iconscout/react-unicons/icons/uil-linkedin";
+import Mail from "@iconscout/react-unicons/icons/uil-envelope";
+
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -32,11 +31,11 @@ const Intro = () => {
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
           <span>Ashish Alok</span>
           <span>
-          Completed, graduation B.Tech in computer science and engineering from the National Institute of Technology Patna, India
-          <br />
-          Web developer with expertise in frontend and backend development.
-          With high level of experience in web designing and development,
-          producing the Quality work.
+            Completed graduation B.Tech in Computer Science and Engineering from the National Institute of Technology Patna, India.
+            <br />
+            Web developer with expertise in frontend and backend development.
+            With a high level of experience in web designing and development,
+            producing quality work.
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
@@ -44,28 +43,19 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-  <a href="https://github.com/alok2006030" target="_blank" rel="noopener noreferrer">
-    <img src={Github} alt="GitHub" />
-  </a>
-  <a href="https://www.linkedin.com/in/the-ashishalok/" target="_blank" rel="noopener noreferrer">
-    <img src={LinkedIn} alt="LinkedIn" />
-  </a>
-  <a href="https://www.youtube.com/@ashish_alok" target="_blank" rel="noopener noreferrer">
-    <img src={YouTube} alt="YouTube" />
-  </a>
-  <a href="https://mail.google.com/ashishalok01@gmail.com" target="_blank" rel="noopener noreferrer">
-    <img src={Mail} alt="Mail" />
-  </a>
-  
-  
-</div>
-
-
+          <a href="https://github.com/alok2006030" target="_blank" rel="noopener noreferrer">
+            <Github color="orange" size={"5.0rem"} />
+          </a>
+          <a href="https://www.linkedin.com/in/the-ashishalok/" target="_blank" rel="noopener noreferrer">
+            <LinkedIn color="orange" size={"5.0rem"} />
+          </a>
+          <a href="mailto:ashishalok01@gmail.com" target="_blank" rel="noopener noreferrer">
+            <Mail color="orange" size={"5.0rem"} />
+          </a>
+        </div>
       </div>
       {/* right image side */}
       <div className="i-right">
-        {/* <img src={Vector1} alt="" /> */}
-        {/* <img src={Vector2} alt="" /> */}
         <img src={boy} alt="" />
         {/* animation */}
         <motion.img

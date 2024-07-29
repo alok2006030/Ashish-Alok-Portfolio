@@ -71,7 +71,7 @@
 @media screen and (max-width: 480px){
     .t-wrapper{
         padding: 0.1rem;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
     .testimonial>img{
         width: 70px;
