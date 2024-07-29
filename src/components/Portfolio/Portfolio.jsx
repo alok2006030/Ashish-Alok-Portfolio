@@ -21,32 +21,32 @@ const Portfolio = () => {
       {/* grid */}
       <div className="portfolio-grid">
         <div className="portfolio-grid-item">
-          <a href="https://example.com/shopping-web-app" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/alok2006030/Pocket-Shop" target="_blank" rel="noopener noreferrer">
             <img src={Shopping} alt="Shopping Web App" />
           </a>
         </div>
         <div className="portfolio-grid-item">
-          <a href="https://example.com/personal-portfolio" target="_blank" rel="noopener noreferrer">
+          <a href="https://ashish-alok.vercel.app/" target="_blank" rel="noopener noreferrer">
             <img src={Personal_Portfolio} alt="Personal Portfolio" />
           </a>
         </div>
         <div className="portfolio-grid-item">
-          <a href="https://example.com/landing-page-sundar-pichai" target="_blank" rel="noopener noreferrer">
+          <a href="https://sundar-pichai.vercel.app/" target="_blank" rel="noopener noreferrer">
             <img src={Landing_Page} alt="Landing Page Sundar Pichai" />
           </a>
         </div>
         <div className="portfolio-grid-item">
-          <a href="https://example.com/to-do-list" target="_blank" rel="noopener noreferrer">
+          <a href="https://alok2006030.github.io/OIBSIP/OIB_Task_3/" target="_blank" rel="noopener noreferrer">
             <img src={ToDo} alt="To-Do List" />
           </a>
         </div>
         <div className="portfolio-grid-item">
-          <a href="https://example.com/to-do-list" target="_blank" rel="noopener noreferrer">
-            <img src={IRCTC} alt="To-Do List" />
+          <a href="https://alok2006030.github.io/ixigo-clone/" target="_blank" rel="noopener noreferrer">
+            <img src={IRCTC} alt="IRCTC Booking" />
           </a>
         </div>
         <div className="portfolio-grid-item">
-          <a href="https://example.com/to-do-list" target="_blank" rel="noopener noreferrer">
+          <a href="https://alok2006030.github.io/Resume/" target="_blank" rel="noopener noreferrer">
             <img src={Resume} alt="About Me" />
           </a>
         </div>
