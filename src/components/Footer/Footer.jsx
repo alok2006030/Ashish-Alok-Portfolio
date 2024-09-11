@@ -3,6 +3,7 @@ import "./Footer.css";
 import footer_image from "../../img/footer_image.png";
 import Fiverr from "../../img/fiverr.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSomeIcon } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram, faFacebook, faUpwork, faTwitter } from '@fortawesome/free-brands-svg-icons'; // Import faTwitter correctly
 
 const Footer = () => {

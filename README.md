@@ -1,57 +1,70 @@
-# Ashish Alok - Web Developer
+# Getting Started with Create React App
 
-## About Me
-I am Ashish Alok, a passionate web developer with expertise in frontend and backend development. I recently completed my B.Tech in Computer Science and Engineering from the National Institute of Technology Patna, India.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Hire Me
-- [GitHub](https://github.com/alok2006030)
-- [LinkedIn](https://www.linkedin.com/in/the-ashishalok/)
-- [Instagram](https://www.instagram.com/ashishalok01/)
-- Email: ashishalok01@gmail.com
+## Available Scripts
 
-## Project Overview
-This repository contains the source code and assets for my personal portfolio website. The website showcases my skills, experience, and recent projects in web development.
+In the project directory, you can run:
 
-### Features
-- **Elegant Design**: Combines functionality with style, featuring a sleek layout and intuitive navigation.
-- **Responsive**: Ensures optimal viewing experience across a wide range of devices.
-- **Performance**: Fast load times and optimized performance.
-- **Content**: Includes sections such as About Me, Services, Experience, Portfolio, Testimonials, and Contact.
+### `yarn start`
 
-## How This Project Works
-- **Technologies Used**: HTML, Tailwind CSS, JavaScript, React, Node.js, MongoDB (if applicable).
-- **Setup Instructions**:
-  1. Clone the repository: `git clone https://github.com/alok2006030/AshishAlok-Portfolio.git`
-  2. Install dependencies: `npm install`
-  3. Start the development server: `npm start`
-  4. Open your browser and visit: `http://localhost:3000` (or the specified port)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Services Offered
-- **Problem-Solving and Critical Thinking**
-- **Programming Languages**: C++
-- **Object-Oriented Programming (OOP)**
-- **Data Structures and Algorithms**
-- **Database Management**
-- **Operating Systems**
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Experience
-- **1.5+ years** of experience
-- **6+ completed projects**
-- **Worked with 2+ companies**
+### `yarn test`
 
-## Awards
-- **Best Design Award**
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Testimonials
-"Clients always get exceptional work from me..."
+### `yarn build`
 
-## Recent Projects
-- Portfolio
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Contact Me
-Feel free to reach out via email or social media:
-- **Email**: ashishalok01@gmail.com
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
----
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-The website's design is superb, with a clean layout, intuitive navigation, and fast load times. It offers engaging visuals, consistent branding, and accessibility, setting a high standard for web design.
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
