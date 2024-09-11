@@ -45,8 +45,8 @@
 
 @media (max-width: 768px) {
   .portfolio {
-    margin-top: 9rem;
-    height: 135vh;
+    margin-top: 10rem;
+    height: 183vh;
   }
 
   .portfolio span:nth-of-type(1),
